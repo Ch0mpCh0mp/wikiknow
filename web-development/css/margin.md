@@ -1,0 +1,1 @@
+margin:  0 auto => macht das es in der Mitte ist
