@@ -1,0 +1,30 @@
+Was bedeutet "GAP" in CSS Flex.
+
+GAP ist noch relativ neu, daher kennen es viele noch nicht. Die CSS-Kurzform 
+„gap“ legt die Abstände (auch „Gutter“ genannt) zwischen Zeilen und Spalten fest. 
+Diese Eigenschaft gilt für mehrspaltige, flexible und Rastercontainer.
+
+Die Gap-Eigenschaft in CSS ist eine Abkürzung für „row-gap“ und „collum-gap“ und
+gibt die Größe der Zwischenräume an, also den Abstand zwischen Zeilen und Spalten 
+in Raster-, Flex- und mehrspaltigen Layouts.
+
+Es akzeptiert eine oder auch zwei values:
+
+    - Ein einzelner Wert legt sowohl den Zeilenabstand als auch den Spaltenabstand 
+    auf denselben Wert fest.
+    - Wenn zwei Werte verwendet werden, legt der erste den Zeilenabstand und der 
+    zweite den Spaltenabstand fest
+
+
+GAP akzeptiert folgende Werte:
+
+    - normal: (Standard) Der Browser verwendet einen Wert von 1em für 
+    mehrspaltiges Layout und 0px für alle anderen Layoutkontexte (z. B. Raster 
+    und Flex).
+    - <length>: Jede gültige und nicht negative CSS-Länge, z. B. px, em, rem und 
+    %, u. a.
+    - <percentage>: Die Größe des Abstands als nicht negativer Prozentwert relativ
+    zur Elementgröße. (Details siehe unten.)
+    - initial: Wendet die Standardeinstellung der Eigenschaft an (normal).
+    - inherit: Übernimmt den Abstandswert des übergeordneten Elements.
+    - unset: Entfernt den aktuellen Abstand vom Element.
