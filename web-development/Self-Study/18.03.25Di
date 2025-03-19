@@ -1,0 +1,26 @@
+align item => default value??
+flex-direction => row-reverse / column-reverse
+
+
+1. align-items = stretch (Default-Wert)
+
+Standardwert für align-items im Flexbox-Container.
+Streckt die Flex-Items entlang der Querachse (senkrecht zur Hauptachse), sodass 
+sie die gesamte Container-Höhe oder -Breite (je nach flex-direction) einnehmen.
+Funktioniert nur, wenn keine feste Höhe/Breite für die Items gesetzt ist.
+
+
+2. flex-direction = row-reverse
+
+Hauptachse verläuft von rechts nach links.
+Erstes Flex-Item erscheint ganz rechts, letztes ganz links.
+Reihenfolge der Elemente wird optisch umgedreht, aber die logische Reihenfolge im 
+DOM bleibt erhalten.
+
+
+3. flex-direction = column-reverse
+
+Hauptachse verläuft von unten nach oben.
+Erstes Flex-Item erscheint ganz unten, letztes ganz oben.
+Reihenfolge der Elemente wird optisch umgedreht, aber die logische Reihenfolge im 
+DOM bleibt erhalten.
