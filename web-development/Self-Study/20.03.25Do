@@ -1,0 +1,26 @@
+:nth-child(n) - :has - attribute selector
+
+1. :nth-child(n)
+
+    - Wählt ein Element basierend auf seiner Position innerhalb seines 
+    übergeordneten Elements.
+    - Beispiel: li:nth-child(2) wählt das zweite Listenelement.
+    - Kann auch mit mathematischen Ausdrücken genutzt werden, z.B. :nth-child(2n) 
+    für jedes gerade Element.
+
+
+2. :has()
+
+    - Ein relationaler Selektor, der es ermöglicht, ein Element auszuwählen, das 
+    bestimmte andere Elemente enthält.
+    - Noch nicht weit verbreitet und nicht in allen Browsern unterstützt.
+    - Beispiel: div:has(p) wählt jedes div, das mindestens ein p enthält.
+
+
+3. Attribut-Selektor
+
+    - Ermöglicht das Auswählen von Elementen basierend auf ihren Attributen und 
+    deren Werten.
+    - Beispiel: input[type="text"] wählt alle input-Elemente vom Typ "text".
+    - Kann auch mit Teilwerten arbeiten, z.B. a[href^="https"] für Links, die mit 
+    "https" beginnen.
