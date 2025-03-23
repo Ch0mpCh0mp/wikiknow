@@ -89,7 +89,8 @@ Semantische Strukturierung & Layout
 Interaktive & Moderne Elemente
 
 62. <dialog>        = Erstellt ein modales Dialogfenster
-63. <template>      = Vorlage für wiederverwendbaren HTML-Code, der erst durch  JavaScript sichtbar wird
+63. <template>      = Vorlage für wiederverwendbaren HTML-Code, der erst durch
+                    JavaScript sichtbar wird
 64. <slot>          = Platzhalter für dynamischen Inhalt in Web Components
 65. <canvas>        = Zeichenfläche für Grafiken mit JavaScript
 66. <svg>           = Fügt skalierbare Vektografiken ein
