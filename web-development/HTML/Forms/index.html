@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formular Beispiele</title>
+    <link rel="stylesheet" href="style.css"> <!-- Verknüpft das CSS -->
+</head>
+<body>
+
+    <h1>Formular-Beispiele</h1>
+
+    
+    <form action="#" method="POST"> <!-- "POST" sendet die Daten sicher an den Server, "GET" würde sie in der URL anzeigen -->
+
+        <!-- Einfache Texteingabe -->
+        <label for="name">Name:</label> <!-- "for" muss mit der "id" des zugehörigen input-Feldes übereinstimmen -->
+        <input type="text" id="name" name="name" placeholder="Dein Name" required> <!-- "required" sorgt dafür, dass das Feld nicht leer abgesendet werden kann -->
+
+        <!-- E-Mail-Feld -->
+        <label for="email">E-Mail:</label>
+        <input type="email" id="email" name="email" placeholder="Deine E-Mail" required> <!-- type="email" überprüft die Eingabe auf ein E-Mail-Format -->
+
+        <!-- Passwortfeld -->
+        <label for="password">Passwort:</label>
+        <input type="password" id="password" name="password" required> <!-- type="password" versteckt die Eingabe -->
+
+        <!-- Telefonnummer -->
+        <label for="phone">Telefon:</label>
+        <input type="tel" id="phone" name="phone" placeholder="01234 56789"> <!-- type="tel" für Telefonnummern -->
+
+        <!-- Zahlenfeld -->
+        <label for="age">Alter:</label>
+        <input type="number" id="age" name="age" min="18" max="99"> <!-- "min" und "max" setzen einen Wertebereich -->
+
+        <!-- Datum -->
+        <label for="birthdate">Geburtsdatum:</label>
+        <input type="date" id="birthdate" name="birthdate"> <!-- Datumsauswahl -->
+
+        <!-- Zeit -->
+        <label for="time">Uhrzeit:</label>
+        <input type="time" id="time" name="time"> <!-- Uhrzeit-Auswahl -->
+
+        <!-- Checkboxen (Mehrfachauswahl möglich) -->
+        <fieldset> <!-- Gruppiert verwandte Eingaben -->
+            <legend>Lieblingsfarben:</legend>
+            <input type="checkbox" id="red" name="color" value="rot">
+            <label for="red">Rot</label> <!-- "for" verbindet Label mit Input -->
+
+            <input type="checkbox" id="blue" name="color" value="blau">
+            <label for="blue">Blau</label>
+
+            <input type="checkbox" id="green" name="color" value="grün">
+            <label for="green">Grün</label>
+        </fieldset>
+
+        <!-- Radiobuttons (Nur eine Auswahl möglich) -->
+        <fieldset>
+            <legend>Geschlecht:</legend>
+            <input type="radio" id="male" name="gender" value="male"> <!-- Name ist bei Radiobuttons wichtig, damit nur eine Auswahl möglich ist -->
+            <label for="male">Männlich</label>
+
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Weiblich</label>
+
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Andere</label>
+        </fieldset>
+
+        <!-- Dropdown-Menü -->
+        <label for="country">Land:</label>
+        <select id="country" name="country">
+            <option value="de">Deutschland</option>
+            <option value="at">Österreich</option>
+            <option value="ch">Schweiz</option>
+        </select>
+
+        <!-- Textarea -->
+        <label for="message">Nachricht:</label>
+        <textarea id="message" name="message" rows="4" placeholder="Deine Nachricht"></textarea>
+
+        <!-- Datei-Upload -->
+        <label for="file">Datei hochladen:</label>
+        <input type="file" id="file" name="file"> <!-- type="file" erlaubt Datei-Uploads -->
+
+        <!-- Schieberegler -->
+        <label for="range">Lautstärke:</label>
+        <input type="range" id="range" name="volume" min="0" max="100"> <!-- type="range" für Schieberegler -->
+
+        <!-- Farbauswahl -->
+        <label for="colorPicker">Wähle eine Farbe:</label>
+        <input type="color" id="colorPicker" name="colorPicker"> <!-- type="color" öffnet einen Farbwähler -->
+
+        <!-- Verstecktes Feld -->
+        <input type="hidden" name="userID" value="12345"> <!-- Unsichtbare Werte, die mitgesendet werden -->
+
+        <!-- Buttons -->
+        <button type="submit">Absenden</button> <!-- Sendet das Formular -->
+        <button type="reset">Zurücksetzen</button> <!-- Setzt alle Eingaben zurück -->
+
+    </form>
+
+</body>
+</html>
