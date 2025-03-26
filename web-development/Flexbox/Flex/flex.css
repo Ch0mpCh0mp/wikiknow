@@ -1,0 +1,43 @@
+/* Grundlegendes Styling für die Seite */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+/* Container-Elemente für Flexbox-Demonstrationen */
+.container {
+    display: flex; /* Aktiviert Flexbox */
+    border: 2px solid black;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+/* Jedes Flex-Item erhält grundlegendes Styling */
+.item {
+    padding: 20px;
+    background-color: lightblue;
+    text-align: center;
+    border: 1px solid blue;
+}
+
+/*
+flex-basis bestimmt die Ausgangsgröße eines Elements
+*/
+.basis .basis-100 { flex-basis: 100px; }
+.basis .basis-200 { flex-basis: 200px; }
+.basis .basis-auto { flex-basis: auto; }
+
+/*
+flex-grow bestimmt, wie stark ein Element wächst
+*/
+.grow .grow-1 { flex-grow: 1; }
+.grow .grow-2 { flex-grow: 2; }
+.grow .grow-3 { flex-grow: 3; }
+
+/*
+flex-shrink bestimmt, wie stark ein Element schrumpft, wenn nicht genug Platz da ist
+*/
+.shrink { width: 400px; }
+.shrink .shrink-1 { flex-shrink: 1; }
+.shrink .shrink-3 { flex-shrink: 3; }
+.shrink .shrink-5 { flex-shrink: 5; }
