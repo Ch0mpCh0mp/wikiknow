@@ -1,0 +1,37 @@
+/* Handy */
+body {
+    background-color: gray;
+  }
+  
+  p {
+    font-size: 20px;
+  }
+  
+  /* Tablet */
+  @media screen and (min-width: 800px) {
+    body {
+      background-color: yellow;
+      font-size: 40px;
+    }
+  }
+  
+  /* Laptop */
+  @media screen and (min-width: 1100px) {
+    body {
+      background-color: green;
+    }
+  }
+  
+  /* Big Desktops */
+  @media (min-width: 1600px) {
+    body {
+      background-color: aqua;
+    }
+  }
+  
+  /* Extra Small Devices => less than 576px */
+  /* Small Devices => Smartphones - iPad Mini => (between 576px - 768px) */
+  /* Medium Devices => iPad - Small Laptops => (between 768px - 990px) */
+  /* Large Devices => larger laptops - Desktops => (between 990px - 1200px) */
+  /* Extra Large Devices => Big Monitors (between 12200px and bigger) */
+  

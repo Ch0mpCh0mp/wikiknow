@@ -1,0 +1,31 @@
+/* Hier sind ein paar Übungen, die dir helfen, ein Gefühl für min-width, max-width, min-max und deren Kombinationen zu bekommen.
+
+🔹 Aufgabe 1: Hintergrundfarbe bei bestimmten Breiten
+Setze den Hintergrund auf blau, wenn die Breite zwischen 500px und 900px liegt.
+
+Setze ihn auf rot, wenn die Breite unter 500px ist.
+
+Sonst soll er weiß sein.
+
+ */
+
+ /* HANDY */
+ body {
+    background-color: white;
+ }
+
+ p {
+    font-size: 20px;
+ }
+
+ /* TABLET */
+ @media screen and (max-width: 499px) {
+    body {
+        background-color: red;
+    }
+ }
+ @media (min-width: 500px) and (max-width: 900px) {
+    body {
+        background-color: blue;
+    }
+ }
