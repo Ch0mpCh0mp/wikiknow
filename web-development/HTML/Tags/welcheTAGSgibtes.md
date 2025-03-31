@@ -76,7 +76,7 @@ Semantische Strukturierung & Layout
 
 51. <section>       = Definiert eine inhaltliche Sektion (z.B. ein Kapitel)
 52. <article>       = Unabhängiger, wiederverwendbarer Inhalt (z.B. Blog-Post)
-53. <aside>         = Inhalt, der neben dem Hauptinhalt steht (z.B. Sidebar)
+53. <aside>         = Inhalt, der neben dem Hauptinhalt steht (z.B. Sidebar), the aside tag should provide addiotional information that helps, but is not required for the page. Optional, additional information. Mit der float property im CSS wird das Element zur Seite geschoben, alle Elemente die danach kommen, floaten dann darum herum. Inline-end und inline-start, werden je nach welcher Sprache geschrieben wird gebraucht. (z.B: deutsch oder arabisch)
 54. <header>        = Kopfbereich eines Dokuments oder einer Sektion
 55. <footer>        = Fußbereich eines Dokuments oder einer Sektion
 56. <main>          = Definiert den Hauptinhalt einer Seite
