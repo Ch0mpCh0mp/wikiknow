@@ -1,47 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
     <title>LISTS</title>
-</head>
-<body>
-    
+  </head>
+  <body>
     <h1>Listen</h1>
 
+    <!-- In HTML, <ul> and <ol> are used to create a list of items. 
+        The main difference between the two is the way the list items are displayed. 
+        <ul> stands for an unordered list and it is used to list items that don't have a specific order. 
+        The list items are displayed with bullet points by default. -->
     <h2>Unordered List</h2>
     <ul>
-        <li>Pizza Dough</li>
-        <li>Tomato Sauce</li>
-        <li>Cheese</li>
-        <li>Toppings
-            <!-- Es geht auch eine Liste innerhalb einer List -->
-            <ul>
-                <li>Pepperoni</li>
-                <li>Mushrooms</li>
-                <li>Cheese</li>
-            </ul>
-        </li>
+      <li>Pizza Dough</li>
+      <li>Tomato Sauce</li>
+      <li>Cheese</li>
+      <li>
+        Toppings
+        <!-- Es geht auch eine Liste innerhalb einer List -->
+        <ul>
+          <li>Pepperoni</li>
+          <li>Mushrooms</li>
+          <li>Cheese</li>
+        </ul>
+      </li>
     </ul>
 
+    
+    <!-- <ol> stands for an ordered list and it is used to list items that have a specific order. 
+        The list items are displayed with numbers by default. -->
     <h2>Ordered List</h2>
     <ol>
-        <li>eat Breakfast</li>
-        <li>take shower</li>
-        <li>leave for work</li>
+      <li>eat Breakfast</li>
+      <li>take shower</li>
+      <li>leave for work</li>
     </ol>
+
+    <!-- In both cases, the list items are created using the <li> element. -->
 
     <h2>Description List</h2>
     <dl>
-        <dt>HTML</dt>
-        <dd>This adds structure to a Webpage</dd>
-        <dt>CSS</dt>
-        <dd>This adds style to a Webpage</dd> 
-        <dt>JavaScript</dt>
-        <dd>This adds functionality to a Webpage</dd>
+      <dt>HTML</dt>
+      <dd>This adds structure to a Webpage</dd>
+      <dt>CSS</dt>
+      <dd>This adds style to a Webpage</dd>
+      <dt>JavaScript</dt>
+      <dd>This adds functionality to a Webpage</dd>
     </dl>
-
-
-</body>
+  </body>
 </html>
